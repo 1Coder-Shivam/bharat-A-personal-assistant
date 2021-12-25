@@ -82,8 +82,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('skm1910.shivam@gmail.com', '8112939821')
-    server.sendmail('skm1910.shivam@gmail.com', to, content)
+    server.login('Your gmail id', 'Your password')
+    server.sendmail('your gmail id', to, content)
     server.close()
 
 
@@ -220,8 +220,8 @@ if __name__ == "__main__":
                   'in different cities , get top headline news from times of india and you can ask me computational or geographical questions too!')
 
         elif "who made you" in query or "who created you" in query or "who discovered you" in query:
-            speak("I was built by Shivam, Shaurya, Ritik and Satyam")
-            print("I was built by Shivam, Shaurya, Ritik and Satyam")
+            speak("I was built by Shivam")
+            print("I was built by Shivam")
 
         elif "no thanks" in query:
             speak("Thanks for using me sir, have a good day.")
